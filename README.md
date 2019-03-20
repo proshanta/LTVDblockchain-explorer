@@ -1,5 +1,5 @@
 # LTVD blockchain explorer
-
+<pre>
 youtube: https://www.youtube.com/watch?v=N2qqvPgTlxs
 Github: https://github.com/InflatibleYoshi/fabric-dev-servers-multipeer
 
@@ -28,7 +28,7 @@ cd ..
 
 At this point you should be able to navigate a browser to http:/{HOST1-DOMAIN/IP}:8080 and connect to either alice or bob's trade network instances.
 
-
+</pre>
 
 Hyperledger Explorer
 =======
