@@ -1,3 +1,35 @@
+# LTVD blockchain explorer
+
+youtube: https://www.youtube.com/watch?v=N2qqvPgTlxs
+Github: https://github.com/InflatibleYoshi/fabric-dev-servers-multipeer
+
+commands:
+
+git clone https://github.com/InflatibleYoshi/blockchain-explorer
+sudo apt install postgresql postgresql-contrib
+cd blockchain-explorer
+git checkout release-3
+
+Edit config.json with the correct tlscerts path. You do not need them functionally but they are there because there have been reported issues when not including the tls certs.( Please change the Branch of this repo to release-3 for the Balance transfer based config)
+
+sudo -u postgres psql
+\i app/db/explorerpg.sql
+\q
+npm install
+cd app/test
+npm install
+npm run test
+cd ../../client
+npm install
+npm test -- -u –coverage
+npm run build
+cd ..
+./start.sh
+
+At this point you should be able to navigate a browser to http:/{HOST1-DOMAIN/IP}:8080 and connect to either alice or bob's trade network instances.
+
+
+
 Hyperledger Explorer
 =======
 
