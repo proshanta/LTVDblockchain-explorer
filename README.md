@@ -28,6 +28,15 @@ cd ..
 
 At this point you should be able to navigate a browser to http:/{HOST1-DOMAIN/IP}:8080 and connect to either alice or bob's trade network instances.
 
+Commands to re-initiate the explorer
+
+lsof -i tcp:8080
+sudo -u postgres psql
+\i app/db/explorerpg.sql
+\q
+./start.sh
+
+
 </pre>
 
 Hyperledger Explorer
