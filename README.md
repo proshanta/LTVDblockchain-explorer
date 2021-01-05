@@ -1,4 +1,4 @@
-# LTVD blockchain explorer
+#blockchain explorer
 <pre>
 youtube: https://www.youtube.com/watch?v=N2qqvPgTlxs
 Github: https://github.com/InflatibleYoshi/fabric-dev-servers-multipeer
